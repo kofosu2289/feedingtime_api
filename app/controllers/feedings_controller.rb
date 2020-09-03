@@ -1,6 +1,6 @@
 class FeedingsController < ApplicationController
   def index
-    @feedings = Feeding.order("created_at DESC").limit(4)
+    @feedings = Feeding.order("created_at DESC").limit(6)
     render json: @feedings, status: :ok
   end
 
